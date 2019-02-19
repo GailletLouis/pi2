@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"   
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="/socket.io/socket.io.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body style="font-size:xx-large">
+
+    <div class='screen collapse' id='screen'>
+    </div>
+
+    <div>
+        <button id='btnRecord' type="button" class="btn btn-primary">Record</button>
+        <button id="btnPlay" type="button" class="btn btn-warning disabled">Play</button>
+        <button id="btnPredict" type="button" class="btn btn-success disabled">Predict Gender</button>
+
+        <!--Response Panel-->
+        <div class='container'>
+            <div class='row center vertical-center'>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="panel panel-primary vertical-center collapse" id='myPanel'>
+                        <div class="panel-heading title text-center">Résultat
+                            <button id="close" type="button" class="btn btn-labeled btn-warning pull-right">
+                                <i class="glyphicon glyphicon-remove"></i>
+                            </button>
+                        </div>
+                        <div class="panel-body">
+                            <br>
+                            <div id="textResult" class="text-center">
+                                Vous êtes : 
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col-lg-6 text-center">
+                                    <button id="btnYes" type="button" class="btn btn-success btn-lg btn-block">Oui</button>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <button id="btnNo" type="button" class="btn btn-danger btn-lg btn-block">Non</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
